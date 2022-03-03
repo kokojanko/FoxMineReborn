@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(minecraft.ttf);
+ }
+ 
+ * {
+    font-family: Minecraft;
+ }
+
+body{
+    margin: 0;
+    padding: 0; 
+}
+.sideLogoWrapper{
+    padding: 0 !important; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.justLogo{
+    width: 65%;
+    height: 80%;
+}
+.justText{
+    padding-top: 1.5em;
+    width: 90%;
+    height: 60%;
+}
+.sidebar{
+    background-color: rgb(31, 24, 30);
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 25% 10% 10% 10%;
+}
+.rightItem{
+    padding-top: 1.5em !important;
+    margin-left: 800px !important; 
+}
+.sideItem{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    height: 150px
+}
+.mainWrapper{
+    background-color: rgb(53, 38, 53);
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.footerMain{
+    background-color: rgb(31, 24, 30);
+    height: 300px;
+}
+
+.slider{
+    max-width: 100%;
+    position: relative;
+    padding: 2em;
+    padding-top: 2em;
+    height: 400px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next{
+    margin-right: 1.5em;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+.sliderWrapper{
+    width: 100%;
+    height: 450px;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+    padding-top: 1em;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    display: none;
+}
+.slider .item:first-child{
+    display: block;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.sideLogo{
+    width: 70%;
+    height: 100%;
+    margin-left: 10em;
+}
+.SideMiniLogoWrapper{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.sideMiniLogo{
+    width: 80%;
+    height: 100%;
+}
+.sidegrid{
+    width: 100px;
+    display: grid;
+    grid-template-rows: 50% 50% ;
+    padding-top: 10%;
+}
+.gridLogo{
+    padding-top: 1em;
+}
+.discWrapper{
+    width: 100%;
+    height: 450px;
+    color: white;
+    padding-top: 2em;
+    padding: 1em;
+}
+.discButtonWrapper{
+    height: 90%;
+    width: 100%;
+    padding-left: 6em;
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+.discButtonWrapper button{
+    background-color: #fff;
+    color: black;
+    padding-left: 1.5em;
+    border: black;
+    margin-top: .5em;
+    font-size: 1em;
+}
+.discButtonWrapper button:hover{
+    background-color: purple;
+    border: black;
+    box-shadow: 2px 2px 2px 1px purple;
+}
+.discButtonWrapper button:focus{
+    background-color: purple;
+    border: purple;
+    box-shadow: 2px 2px 2px 1px purple;
+}
