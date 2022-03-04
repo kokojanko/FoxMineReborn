@@ -32,9 +32,14 @@ body{
     display: grid;
     grid-template-columns: 25% 10% 10% 10%;
 }
+.sideItem a{
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
 .rightItem{
     padding-top: 1.5em !important;
-    margin-left: 800px !important; 
+    margin-left: 450% !important;
 }
 .sideItem{
     padding-top: 10%;
@@ -44,7 +49,7 @@ body{
     text-align: center;
     color: white;
     font-size: 1.3em;
-    height: 150px
+    height: 150px;
 }
 .mainWrapper{
     background-color: rgb(53, 38, 53);
@@ -195,6 +200,10 @@ body{
     padding-top: 2em;
     padding: 1em;
 }
+.sideItem a:hover{
+    color: purple;
+    transition: .4s;
+}
 .discButtonWrapper{
     height: 90%;
     width: 100%;
@@ -219,4 +228,25 @@ body{
     background-color: purple;
     border: purple;
     box-shadow: 2px 2px 2px 1px purple;
+}
+.footerDisc{
+    font-size: 1.2em;
+    color: white;
+    padding: 1em;
+}
+.footerDisc li{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    list-style: square;
+}
+.footerDisc li a{
+    color: purple;
+    text-decoration: none;
+    transition: .4s;
+}
+.footerDisc li a:hover{
+    color: white;
+    font-size: 1.01em;
+    transition: .4s;
 }
